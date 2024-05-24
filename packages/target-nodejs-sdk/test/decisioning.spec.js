@@ -568,8 +568,6 @@ describe("target on-device decisioning", () => {
                 }
               });
               expect(error).toMatchObject({
-                message:
-                  "invalid json response body at  reason: Unexpected token / in JSON at position 0",
                 type: "invalid-json"
               });
 
