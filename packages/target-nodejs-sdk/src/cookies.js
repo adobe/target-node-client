@@ -14,6 +14,7 @@ export const TARGET_COOKIE = "mbox";
 export const SESSION_ID_COOKIE = "session";
 export const DEVICE_ID_COOKIE = "PC";
 export const LOCATION_HINT_COOKIE = "mboxEdgeCluster";
+export const QA_MODE_COOKIE = "at_qa_mode";
 
 function createInternalCookie(name, value, expires) {
   return { name, value, expires };

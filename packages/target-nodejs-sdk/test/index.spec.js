@@ -121,6 +121,10 @@ describe("Target Client factory", () => {
     );
   });
 
+  it("should return qa mode cookie name", () => {
+    expect(TargetClient.TargetQaModeCookieName).toBe("at_qa_mode");
+  });
+
   it("should return Visitor Auth State", () => {
     expect(TargetClient.AuthState).toEqual(AUTH_STATE);
   });

@@ -27,7 +27,7 @@ import Visitor from "@adobe-mcid/visitor-js-server";
 import TargetDecisioningEngine from "@adobe/target-decisioning-engine";
 import { createVisitor } from "./utils";
 import { Messages } from "./messages";
-import { LOCATION_HINT_COOKIE, TARGET_COOKIE } from "./cookies";
+import { LOCATION_HINT_COOKIE, TARGET_COOKIE, QA_MODE_COOKIE } from "./cookies";
 import { executeDelivery } from "./target";
 import { preserveLocationHint, requestLocationHintCookie } from "./helper";
 
@@ -263,6 +263,10 @@ export default function bootstrap(fetchApi) {
 
     static get TargetLocationHintCookieName() {
       return LOCATION_HINT_COOKIE;
+    }
+
+    static get TargetQaModeCookieName() {
+      return QA_MODE_COOKIE;
     }
 
     static get AuthState() {
